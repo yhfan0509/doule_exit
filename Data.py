@@ -1,0 +1,20 @@
+FLAG = True
+ROOM_M = 40 # 房间长度
+ROOM_N = 40 # 房间高度
+EXIT_X = 20 # 出口x坐标
+EXIT_Y = 40 # 出口y坐标
+EXIT_WIGTH = 6 # 出口宽度
+
+PEOPLE_DENSITY = 0.1 # 行人密度
+RATIO_BLIND = 0.4  # 盲人blind 比例
+RATIO_DEAF = 0.5  # 聋人deaf比例
+PEOPLE_NUMBER = int(ROOM_M * ROOM_N * PEOPLE_DENSITY) # 行人数量
+BLINDPEOPLE_NUMBER = int((ROOM_M) * (ROOM_N) * PEOPLE_DENSITY * RATIO_BLIND)   # 盲人blind
+DEAFPEOPLE_NUMBER = int((ROOM_M) * (ROOM_N) * PEOPLE_DENSITY * RATIO_DEAF)    # 聋人deaf
+ZCPEOPLE_NUMBER = int((ROOM_M) * (ROOM_N) * PEOPLE_DENSITY * (1 - RATIO_BLIND - RATIO_DEAF))  # ZC
+# PEOPLE_NUMBER = 3
+VISIBLE_R = 5 # 行人视野半径
+
+HEARING_R=VISIBLE_R+3
+FX_M=20#x位移   信息源位置
+FX_N=39#y位移
